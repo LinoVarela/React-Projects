@@ -6,10 +6,9 @@
 - Structure a React app
 - state management
 - React hook
--  Createing custoom hooks
+- Creating custoom hooks
 - Data Fetching
 
 # Pré-requisitos 
  - HTML/CSS
  - Javascript basics
-- 
