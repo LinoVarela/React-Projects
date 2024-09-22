@@ -12,3 +12,7 @@
 # Pré-requisitos 
  - HTML/CSS
  - Javascript basics
+
+## Bea
+
+- a bea 
