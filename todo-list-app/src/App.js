@@ -42,6 +42,8 @@ function App() {
         <input
           ref={inputTask}
           type="text"
+          onKeyDown={(event)=> 
+            {if (event.keyCode == 13) addTask()}} //detect if a key is pressed , 13 is the enter key
           placeholder="Task..."
           onChange={(event) => { setCurrentTask(event.target.value) }}>
         </input>
