@@ -31,6 +31,18 @@ button:hover{
   cursor: pointer;
 }
 
+.Quiz{
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: lightseagreen;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
 
 .App-logo {
   height: 40vmin;
