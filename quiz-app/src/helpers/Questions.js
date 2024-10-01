@@ -5,7 +5,7 @@
 export const Questions = [
 
     {
-    prompt: "what is my name",
+    prompt: "What is my name",
     optionA: "John",
     optionB: "jake",
     optionC: "Josh",
@@ -13,7 +13,7 @@ export const Questions = [
     answer: "optionD",
     },
     {
-    prompt: "which of this this is not a progamming language",
+    prompt: "Which of this this is not a progamming language",
     optionA: "Python",
     optionB: "Java",
     optionC: "MC03",
