@@ -42,10 +42,21 @@ button:hover{
   align-items: center;
 }
 
-.Menu .Quiz{
+.Menu .Quiz .EndScreen{
   color: white;
 }
 
+
+.EndScreen{
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: lightseagreen;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 
 .App-logo {
@@ -72,6 +83,15 @@ button:hover{
 
 .App-link {
   color: #61dafb;
+}
+
+#nextQuestion{
+  width: 200px;
+}
+
+
+h3{
+  color: white;
 }
 
 @keyframes App-logo-spin {

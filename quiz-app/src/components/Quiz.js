@@ -1,6 +1,8 @@
 import "../App.css"
 import { Questions } from "../helpers/Questions"
 import { useState } from "react"
+import { useContext } from 'react';
+import { GameStateContext } from '../helpers/Contexts';
 
 
 function Quiz() {
@@ -8,12 +10,17 @@ function Quiz() {
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [optionChosen,setOptionChosen] = useState("");
 
+
+    const { score, setScore,gameState, setGameState} = useContext(GameStateContext);
+
+
     function chooseOption(option){
         setOptionChosen(option);
     }
 
     function nextQuestion(){
         if(Questions[currentQuestion].answer == optionChosen){
+            setScore(score + 1);
             console.log("correct")
         }
         else{
@@ -25,6 +32,12 @@ function Quiz() {
     }
 
 
+    function finishQuiz(){
+        if(Questions[currentQuestion].answer == optionChosen){
+            setScore(score + 1);
+        }
+        setGameState('finished')
+    }
 
 
     return (
@@ -36,8 +49,14 @@ function Quiz() {
                 <button onClick={() => {chooseOption("optionC")}}>{Questions[currentQuestion].optionC}</button>
                 <button onClick={() => {chooseOption("optionD")}}>{Questions[currentQuestion].optionD}</button>
             </div>
-            <button onClick={(nextQuestion)}>Next question</button>
-
+            {currentQuestion == Questions.length - 1 ? (
+                <button onClick={(finishQuiz)} id="nextQuestion">Finish Quiz</button>
+            ) : (
+                <button onClick={(nextQuestion)}  id="nextQuestion">Next question</button>
+            )
+            
+        }
+   
         </div>
     )
 
