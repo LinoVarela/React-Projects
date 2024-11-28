@@ -9,10 +9,6 @@
 - Creating custoom hooks
 - Data Fetching
 
-# Pré-requisitos 
+# Pre-requirements 
  - HTML/CSS
  - Javascript basics
-
-## Bea
-
-- a bea 
